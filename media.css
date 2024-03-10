@@ -1,0 +1,582 @@
+@media (max-width: 1024px) {
+
+    .container-min {
+        max-width: 765px;
+        padding: 0 20px;
+    }
+/*-----------header-----------------*/
+    .header {
+        height: 75px;
+    }
+
+    .main__header {
+        align-items: center;
+    }
+
+    .header__logo {
+        align-items: center;
+    }
+
+    .header__logo span {
+        font-size: 23px;
+    }
+
+    .header__nav ul {
+        width: 430px;
+    }
+
+    .header__nav ul a {
+        font-size: 14px;
+        padding-right: 10px;
+    }
+
+    .header__btn {
+        width: 90px;
+        height: 35px;
+        font-size: 14px;
+    }
+
+    /*--------------main-----------------*/
+
+
+    /*preview*/
+
+    #preview {
+        min-height: 615px;
+    }
+
+    .main__preview {
+        width: 80%;
+    }
+
+    .h1 {
+        font-size: 65px;
+    }
+
+    #start_planning {
+        width: 100%;
+        height: 70px;
+    }
+
+    .preview__btn {
+        width: 188px;
+        height: 46px;
+        font-size: 20px;
+        bottom: 59px;
+        left: 65%;
+    }
+
+/*steps*/
+
+    .main__steps h2 {
+        margin: 50px 0 50px;
+        font-size: 35px;
+    }
+
+    .steps_div img {
+        width: 80px;
+    }
+
+    .steps_div2 {
+        padding-left: 30px;
+    }
+
+    .steps_div p {
+        font-size: 16px;
+    }
+
+
+/*destinations*/
+
+
+    #destinations h2 {
+        font-size: 35px;
+    }
+
+    .destinations__img img {
+        width: 400px;
+    }
+
+    .destinations__img span {
+        position: relative;
+        bottom: 56px;
+        left: 10px;
+        font-size: 25px;
+    }
+
+    .destinations__btn {
+        width: 200px;
+        height: 50px;
+        font-size: 21px;
+    }
+
+
+/*stories*/
+
+
+    #stories h2 {
+        font-size: 35px;
+    }
+
+    .story {
+        align-items: center;
+    }
+
+    .story img {
+        height: 150px;
+    }
+
+    .story__text h3 {
+        font-size: 25px;
+        line-height: 35px;
+        margin: 0px;
+    }
+
+    .story__text p {
+        font-size: 15px;
+        line-height: 20px;
+        margin-top: 10px;
+    }
+
+    .story__text a {
+        font-size: 17px;
+    }
+
+/*-----------footer---------*/
+    .footer {
+        bottom: 49px;
+    }
+
+    .footer p {
+        font-size: 14px;
+        margin: 13px 0px 0px 0px;
+    }
+
+    .footer a img {
+        width: 28px;
+    }
+
+    .social-networks {
+        align-items: baseline;
+    }
+}
+
+@media(min-width: 320px) and (max-width: 780px) {
+    .blackout_active {
+        background-color: rgba(0, 0, 0, 0.7);
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        z-index: 2;
+        overflow: hidden;
+    }
+
+    .body_active {
+        overflow: hidden;
+    }
+
+    .container-min {
+        min-width: 320px;
+        padding: 0 15px;
+    }
+
+    .main__header span,
+    .header__btn,
+    .header__nav ul,
+    .h1,
+    .h1__subtitle {
+        display: none;
+    }
+
+
+    .header {
+        background: linear-gradient(rgba(68, 118, 128, 1), rgba(68, 118, 128, 0));
+        box-shadow: none;
+        z-index: 2;
+
+        overflow: hidden;
+    }
+
+    .nav_list li:nth-child(5) {
+        display: block;
+    }
+
+    .header_active {
+        overflow: visible;
+
+    }
+
+    .header__logo {
+        margin-top: 30px;
+    }
+
+
+    .wrapper_burger {
+        width: 35px;
+        height: 32px;
+        background: none;
+        position: relative;
+        margin-right: 5px;
+        margin-top: 27px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 6px 0;
+    }
+
+    .wrapper_burger span {
+        display: block;
+        width: 25px;
+        height: 2px;
+        background: rgb(255, 255, 255);
+        border-radius: 100%;
+        transition: 0.5s;
+    }
+
+    .wrapper_burger_active {
+        display: block;
+        position: relative;
+        right: 100px;
+        top: 5px;
+        z-index: 6;
+    }
+
+    .wrapper_burger_active span {
+        margin-bottom: -2px;
+        width: 18px;
+
+    }
+
+    .wrapper_burger_active span:nth-child(1) {
+        transform: translateY(3px) rotate(-45deg);
+    }
+
+    .wrapper_burger_active span:nth-child(2) {
+        display: none;
+    }
+
+    .wrapper_burger_active span:nth-child(3) {
+        transform: translateY(3px) rotate(45deg);
+    }
+
+    ul.nav-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        padding-top: 30px;
+        width: 165px;
+        height: 250px;
+        background: rgba(242, 120, 92, 1);
+        position: absolute;
+        top: 30%;
+        right: -52%;
+        border-radius: 12px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 21px;
+        z-index: 5;
+        transition: 0.5s all;
+
+    }
+
+    .header__nav ul.nav-list_active {
+        left: none;
+        right: -52%;
+        right: 0%;
+        padding-bottom: 8px;
+    }
+
+    .header__nav_active li {
+        margin-bottom: 9px;
+    }
+
+    #preview {
+        min-height: 266px;
+    }
+
+    .main__preview {
+        width: 100%;
+    }
+
+    #start_planning {
+        width: 100%;
+        height: 48px;
+        margin-top: 104px;
+    }
+
+    #start_planning[type="text"] {
+        padding-left: 15px;
+    }
+
+    #start_planning::placeholder {
+        font-size: 12px;
+        color: rgba(242, 120, 92);
+        padding-bottom: 16px;
+        font-size: 14px;
+    }
+
+
+    .preview__btn {
+        width: 26%;
+        height: 30px;
+        font-size: 2.8vw;
+        bottom: 39px;
+        clear: left;
+        left: 72%;
+        line-height: 0px;
+    }
+
+    .main__steps h2 {
+        font-size: 14px;
+        margin: 3px 0 0 0;
+    }
+
+    .steps__div {
+        padding-top: 3px;
+        margin: 0;
+        width: 100%;
+    }
+
+    .steps_div {
+        width: 33%;
+    }
+
+    .steps_div:nth-child(1) {
+        align-items: flex-start;
+        text-align: start;
+
+    }
+
+    .steps_div:nth-child(1) p {
+        width: 80px;
+    }
+
+    .steps_div:nth-child(2) {
+        align-items: center;
+        padding-left: 0;
+    }
+
+    .steps_div:nth-child(3) {
+        align-items: flex-end;
+        text-align: end;
+    }
+
+    .main__steps {
+        padding: 0;
+    }
+
+    .steps_div img {
+        width: 70px;
+        margin-bottom: 9px;
+        border-radius: 16px;
+    }
+
+    .steps_div p {
+        font-size: 10px;
+        line-height: 12px;
+        margin-bottom: 0;
+    }
+
+    #destinations h2 {
+        font-size: 14px;
+        margin: 5px 0 0;
+    }
+
+    .destinations__imgs {
+        margin-top: 2px;
+        width: 100%;
+        position: relative;
+    }
+
+    .destinations__imgs::before {
+        content: '‹';
+        font-size: 52px;
+        color: rgba(242, 120, 92);
+        position: absolute;
+        top: 33%;
+        left: 6%;
+    }
+
+    .destinations__imgs::after {
+        content: '›';
+        font-size: 52px;
+        color: rgba(242, 120, 92);
+        position: absolute;
+        top: 33%;
+        right: 6%;
+    }
+
+    .destinations__img,
+    .destinations__img img {
+        display: none;
+        height: 210px;
+    }
+
+    .destinations__img:nth-child(1) {
+        display: block;
+        width: 93%;
+        border-radius: 16px;
+        background-image: url('../images/bg/ocean.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+    }
+
+    .destinations__img span {
+        bottom: 0;
+        left: 15px;
+        font-size: 21px;
+    }
+
+    .dots-wrapper {
+        width: 37px;
+        margin-top: -20px;
+    }
+
+    .dot {
+        width: 8px;
+        height: 8px;
+    }
+
+    .destinations__btn {
+        width: 94px;
+        height: 31px;
+        font-size: 11px;
+        margin: 22px auto 0;
+        padding: 0 5px;
+    }
+
+    .destinations__btn img {
+        width: 13px;
+    }
+
+    #stories h2 {
+        font-size: 14px;
+        margin-top: 9px;
+        margin-bottom: 0;
+        line-height: 39px;
+    }
+
+    .stories__wrapper {
+        margin: 0;
+    }
+
+    .stories__wrapper__main {
+        padding-top: 0px;
+        padding-bottom: 13px;
+    }
+
+    .story {
+        align-items: flex-start;
+        padding-top: 10px;
+    }
+
+    .story:nth-child(1) .story__wrapper {
+        background-image: url('../images/bg/story1.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .story:nth-child(2) .story__wrapper {
+        background-image: url('../images/bg/story2.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .story:nth-child(3) .story__wrapper {
+        background-image: url('../images/bg/story3.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .story:nth-child(4) .story__wrapper {
+        background-image: url('../images/bg/story4.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .story {
+        justify-content: space-between;
+        align-items: flex-start;
+        padding-bottom: 2px;
+        height: 130px;
+        margin-bottom: 14px;
+    }
+
+    .story__wrapper img {
+        display: none;
+    }
+
+    .story__wrapper {
+        width: 155px;
+        height: 131px;
+        background-color: #fff;
+        border-radius: 13%;
+        filter: drop-shadow(0px 4px 4px #0D606F);
+    }
+
+    .story h3 {
+        font-size: 11px;
+        line-height: 13px;
+    }
+
+    .story__text {
+        padding-left: 0px;
+        padding-top: 5px;
+        width: 54%;
+    }
+
+    .story p,
+    .story a {
+        font-size: 9px;
+        line-height: 11px;
+    }
+
+    .story a {
+        display: block;
+        margin-top: 3px;
+    }
+
+    .story p {
+        overflow: hidden;
+        height: 85px;
+    }
+
+    .story p span {
+        text-overflow: ellipsis;
+    }
+
+    .story-btn {
+        margin-top: 22px;
+    }
+
+    .footer .container-min {
+        display: flex;
+        justify-content: center;
+        margin-right: 6px;
+    }
+
+    .footer p {
+        display: none;
+    }
+
+    .footer a img {
+        width: 33px;
+        margin-right: 3px;
+    }
+
+    .social-networks {
+        display: flex;
+        justify-content: center;
+    }
+
+
+
+}
